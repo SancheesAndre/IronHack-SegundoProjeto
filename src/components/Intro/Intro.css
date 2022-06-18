@@ -1,0 +1,9 @@
+.Intro {
+    background-color: rgb(242, 242, 242);
+}
+
+.btn-destinos {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
