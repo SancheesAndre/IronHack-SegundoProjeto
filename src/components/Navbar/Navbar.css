@@ -29,13 +29,15 @@ nav div {
     justify-content: space-between;
 }
 
-ul li {
+ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-li a {
+li {
     display: flex;
+    padding: 10px;
 }
 
 .btn-cadastrar {
