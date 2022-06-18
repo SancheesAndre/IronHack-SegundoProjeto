@@ -7,6 +7,7 @@ function Navbar() {
             </div>
 
             <div className='menu'>
+            
                 <ul>
                     <li>
                         <a>Home</a>
@@ -14,8 +15,10 @@ function Navbar() {
                     <li>
                         <a>Destinos</a>
                     </li>
-                </ul>                
+                </ul>  
+
                 <button className='btn-cadastrar'>Cadastre seu destino</button>
+
             </div>
             
         </nav>

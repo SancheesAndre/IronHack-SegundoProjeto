@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 nav {
     background-color: black;
@@ -24,7 +24,6 @@ nav div {
 }
 
 .menu {
-    width: ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,7 +31,11 @@ nav div {
 
 ul li {
     display: flex;
-    
+    align-items: center;
+}
+
+li a {
+    display: flex;
 }
 
 .btn-cadastrar {
