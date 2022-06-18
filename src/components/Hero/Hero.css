@@ -2,6 +2,11 @@ body, html {
     height: 100%;
 }
 
+.heroImage {
+    width: 200px;
+    height: auto;
+}
+
 .hero {
     background-image: url("../../images/cristo.jpeg");
 

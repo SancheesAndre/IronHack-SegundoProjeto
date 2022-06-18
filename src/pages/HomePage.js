@@ -1,15 +1,13 @@
 import Navbar from "../components/Navbar/Navbar"
 import Hero from "../components/Hero/Hero"
 
-function Home() {
+const HomePage = () => {
     return (
         <div>
             <Navbar />
             <Hero />
-        
-        
         </div>       
     )
 }
 
-export default Home
+export default HomePage

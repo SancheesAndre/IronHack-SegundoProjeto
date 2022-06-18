@@ -1,4 +1,9 @@
+import { Link } from 'react-router-dom'
+import HomePage from '../../pages/HomePage'
+import AllRoutesPage from '../../pages/AllRoutesPage'
 import './Navbar.css'
+
+
 function Navbar() {
     return(
         <nav>
@@ -10,10 +15,10 @@ function Navbar() {
             
                 <ul>
                     <li>
-                        <a>Home</a>
+                        <Link to={<HomePage />}>Home</Link>
                     </li>                
                     <li>
-                        <a>Destinos</a>
+                        <Link to={AllRoutesPage}>Destinos</Link>
                     </li>
                 </ul>  
 
