@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom'
-import HomePage from '../../pages/HomePage'
-import AllRoutesPage from '../../pages/AllRoutesPage'
 import './Navbar.css'
 
 
@@ -15,14 +13,14 @@ function Navbar() {
             
                 <ul>
                     <li>
-                        <Link to={<HomePage />}>Home</Link>
+                        <Link to={'/'}>Home</Link>
                     </li>                
                     <li>
-                        <Link to={AllRoutesPage}>Destinos</Link>
+                        <Link to={'/routes'}>Destinos</Link>
                     </li>
                 </ul>  
 
-                <button className='btn-cadastrar'>Cadastre seu destino</button>
+                <button className='btn-cadastrar'><Link to={'/new-route'} >Cadastre seu destino</Link></button>
 
             </div>
             

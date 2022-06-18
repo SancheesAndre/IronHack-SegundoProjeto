@@ -3,6 +3,10 @@
     height: 300px;
 }
 
+a {
+    color: #333
+}
+
 /* .RouteCard {
     display: flex;
 } */
