@@ -3,7 +3,7 @@ const RouteDetailsPage = () => {
 
     return(
         <div>
-
+            
         </div>
     )
 }
