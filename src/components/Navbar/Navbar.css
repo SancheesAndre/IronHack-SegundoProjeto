@@ -12,7 +12,8 @@ nav div {
 }
 
 .logo {
-    font-size: xx-large;
+    width: 30%;
+    font-size: 40px;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -35,7 +36,6 @@ ul  {
 li {
     display: flex;
     padding: 10px;
-    text-decoration: none;
 }
 
 .btn-cadastrar {
