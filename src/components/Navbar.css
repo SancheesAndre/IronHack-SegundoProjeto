@@ -1,6 +1,4 @@
-* {
-    border: 1px solid red;
-}
+
 
 nav {
     background-color: black;
@@ -24,13 +22,13 @@ nav div {
 }
 
 .menu {
-    width: ;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-ul li {
+ul  {
     display: flex;
     
 }

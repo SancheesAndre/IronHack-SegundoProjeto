@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar/Navbar"
+import Navbar from "../components/Navbar"
 
-function Home() {
+const HomePage = () => {
     return (
         <div>
             <Navbar />
@@ -10,4 +10,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage
