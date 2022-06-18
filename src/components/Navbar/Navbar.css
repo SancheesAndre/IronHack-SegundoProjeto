@@ -1,0 +1,43 @@
+* {
+    border: 1px solid red;
+}
+
+nav {
+    background-color: black;
+    height: 8vh;
+    width: 97%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    color: white;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li {
+    display: flex;
+    
+}
+
+.btn-cadastrar {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
