@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Navbar from '../components/Navbar/Navbar'
+import RegisterArea from "../components/RegisterArea/RegisterArea"
+import Footer from "../components/Footer/Footer"
 import { Link } from 'react-router-dom'
 import './AllRoutesPage.css'
 
@@ -39,6 +41,10 @@ const AllRoutesPage = () => {
                     )
                 })  
             }
+
+            <RegisterArea/>
+            <Footer />
+
         </div>
     )
 }
