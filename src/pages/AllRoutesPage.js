@@ -25,12 +25,16 @@ const AllRoutesPage = () => {
                     return (
                         <Link to={route._id} key={route._id}>
                             <div className='RouteCard'>
-                                <img className="imageBox" src={route.imgUrl} alt="Route" />
+                                <div className='imgDiv'>
+                                    <img className="imageBox" src={route.imgUrl} alt="Route" />
+                                </div>
+
+                                <div className="routeInfo">
+                                    <h1>{route.title}</h1>
+                                    <h2>{route.city} - {route.country}</h2>
+                                </div>
                             </div>
-                            <div className="routeInfo">
-                                <h1>{route.title}</h1>
-                                <h2>{route.city} - {route.country}</h2>
-                            </div>
+                            
                         </Link>
                     )
                 })  

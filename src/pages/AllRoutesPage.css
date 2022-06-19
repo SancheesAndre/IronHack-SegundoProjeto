@@ -7,6 +7,16 @@ a {
     color: #333
 }
 
-/* .RouteCard {
+.RouteCard {
+    padding: 20px 0px 20px;
     display: flex;
-} */
+    justify-content: center;
+}
+
+.imgDiv {
+    padding-right: 20px;
+}
+
+.routeInfo {
+    padding-left: 20px;
+}
