@@ -1,11 +1,13 @@
+
 const RouteDetailsPage = () => {
+    
 
 
-    return(
-        <div>
-            
-        </div>
-    )
+return (
+    <div>
+        
+    </div>
+)
 }
 
 export default RouteDetailsPage
