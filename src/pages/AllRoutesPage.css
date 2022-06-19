@@ -1,14 +1,17 @@
-.imageBox {
-    width: 400px;
-    height: 300px;
-}
+/* * {
+    border: 1px solid red;
+} */
 
 a {
     color: #333
 }
 
-.RouteCard {
-    padding: 20px 0px 20px;
+.RouteCard {    
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 10px 10px 20px rgb(113, 113, 113);
+    margin: 50px;
+    width: 60vw;
     display: flex;
     justify-content: center;
 }
@@ -17,6 +20,10 @@ a {
     padding-right: 20px;
 }
 
+.imageBox {
+    width: 400px;
+    height: 300px;
+} 
 .routeInfo {
     padding-left: 20px;
 }
