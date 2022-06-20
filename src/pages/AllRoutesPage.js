@@ -22,27 +22,25 @@ const AllRoutesPage = () => {
     return (
         <div>
             <Navbar />
-                {
-                    routes.map(route => {
-                        return (
-                            <Link to={route._id} key={route._id}>
-                                <div className='cardBox'>
-                                    <div className='RouteCard'>
-                                        <div className='imgDiv'>
-                                            <img className="imageBox" src={route.imgUrl} alt="Route" />
-                                        </div>
-
-                                        <div className="routeInfo">
-                                            <h1>{route.title}</h1>
-                                            <h2>{route.city} - {route.country}</h2>
-                                        </div>
+            {
+                routes.map(route => {
+                    return (
+                        <div className='container'>
+                            <Link to={route._id} key={route._id} className='RouteCard'>
+                                <div className='imgDiv'>
+                                    <img className="imageBox" src={route.imgUrl} alt="Route" />
+                                </div>
+                                <div>
+                                    <div className="routeInfo">
+                                        <h1>{route.title}</h1>
+                                        <h2>{route.city} - {route.country}</h2>
                                     </div>
                                 </div>
-                            </Link>                                
-                        )
-                    })  
-                }
-
+                            </Link>                            
+                        </div>
+                    )
+                })  
+            }
 
             <RegisterArea/>
             <Footer />

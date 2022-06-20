@@ -1,0 +1,27 @@
+
+.ImageCardBox {
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 10px 10px 20px rgb(113, 113, 113);
+    margin: 50px auto;
+    width: 440px;
+    border-radius: 4px;
+}
+
+.InfoCardBox {
+    font-family: 'Permanent Marker', sans-serif;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 10px 10px 20px rgb(113, 113, 113);
+    margin: 50px auto;
+    width: 440px;
+    height: 440px;
+    border-radius: 4px;
+}
+
+.CardImage {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
