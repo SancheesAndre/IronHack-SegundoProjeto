@@ -25,8 +25,8 @@ const AllRoutesPage = () => {
             {
                 routes.map(route => {
                     return (
-                        <Link to={route._id} key={route._id}>
-                            <div className='RouteCard'>
+                        <div className='container'>
+                            <Link to={route._id} key={route._id} className='RouteCard'>
                                 <div className='imgDiv'>
                                     <img className="imageBox" src={route.imgUrl} alt="Route" />
                                 </div>
@@ -35,9 +35,9 @@ const AllRoutesPage = () => {
                                     <h1>{route.title}</h1>
                                     <h2>{route.city} - {route.country}</h2>
                                 </div>
-                            </div>
+                            </Link>
                             
-                        </Link>
+                        </div>
                     )
                 })  
             }
