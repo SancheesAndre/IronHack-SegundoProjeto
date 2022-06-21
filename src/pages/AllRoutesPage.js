@@ -42,8 +42,8 @@ const AllRoutesPage = () => {
                                     <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">
-                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'><i className="fa-thin fa-pen"></i></Link>
-                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><b>X</b></button>
+                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'>✏️</Link>
+                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}>🗑️</button>
                                 </div>
                             </div>
 
