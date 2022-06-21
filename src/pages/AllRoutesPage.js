@@ -23,7 +23,7 @@ const AllRoutesPage = () => {
     function deleteCardFunc(id) {
             axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${id}`)
             .then(setRoutes(routes.filter(route => route._id !== id)))
-        
+            .catch(err => console.log(err))        
     }
 
     return (
@@ -40,9 +40,10 @@ const AllRoutesPage = () => {
                                 <Link to={route._id} className="routeInfo">
                                     <h1>{route.title}</h1>
                                     <h2>{route.city} - {route.country}</h2>
+                                    <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">
-                                    <Link to={'/update-route'} className='UpdateLink'>✏️</Link>
+                                    <Link to={'/update-route'} className='UpdateLink'>Editar</Link>
                                     <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><b>X</b></button>
                                 </div>
                             </div>
