@@ -3,6 +3,8 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import './RouteDetailsPage.css'
 import Navbar from "../components/Navbar/Navbar"
+import RegisterArea from "../components/RegisterArea/RegisterArea"
+import Footer from "../components/Footer/Footer"
 
 const RouteDetailsPage = () => {
     const [route, setRoute] = useState([])

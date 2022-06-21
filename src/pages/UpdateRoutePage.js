@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Navbar from "../components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer"
 
 
 const UpdateRoutePage = () => {
