@@ -14,7 +14,7 @@ function App() {
         <Route path='/routes' element={<AllRoutesPage />} />
         <Route path='/routes/:routeId' element={<RouteDetailsPage />} />
         <Route path='/new-route' element={<NewRoutePage />} />
-        <Route path='/update-route' element={<UpdateRoutePage />} />
+        <Route path='/update-route/:routeId' element={<UpdateRoutePage />} />
         {/* <Route path='/*' element={<ErrorPage />} /> */}
       </Routes>
 

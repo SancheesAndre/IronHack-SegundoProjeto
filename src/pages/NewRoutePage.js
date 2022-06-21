@@ -1,8 +1,10 @@
 import axios from 'axios'
 import { useState } from 'react'
 import Navbar from "../components/Navbar/Navbar"
+import { useNavigate } from 'react-router-dom'
 
 const NewRoutePage = () => {
+    const navigate = useNavigate()
     const [ state, setState ] = useState({
         imgUrl: '',
         title: '',
@@ -18,7 +20,7 @@ const NewRoutePage = () => {
     function handleSubmit(e) {
         e.preventDefault()
         axios.post('https://ironrest.herokuapp.com/IronTourDB', state)
-        .then(alert('O novo Destino foi adicionado!'))
+        .then(() => navigate('/routes'))
         .catch(error => console.log(error))
     }
 

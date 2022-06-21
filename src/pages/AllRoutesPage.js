@@ -5,7 +5,6 @@ import RegisterArea from "../components/RegisterArea/RegisterArea"
 import Footer from "../components/Footer/Footer"
 import { Link } from 'react-router-dom'
 import './AllRoutesPage.css'
-import { useParams } from 'react-router-dom'
 
 const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
@@ -32,8 +31,8 @@ const AllRoutesPage = () => {
             {
                 routes.map(route => {
                     return (
-                        <div className='container'>
-                            <div key={route._id} className='RouteCard'>
+                        <div key={route._id} className='container'>
+                            <div  className='RouteCard'>
                                 <Link to={route._id} className='imgDiv'>
                                     <img className="imageBox" src={route.imgUrl} alt="Route" />
                                 </Link>
@@ -43,7 +42,7 @@ const AllRoutesPage = () => {
                                     <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">
-                                    <Link to={'/update-route'} className='UpdateLink'>Editar</Link>
+                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'><i className="fa-thin fa-pen"></i></Link>
                                     <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><b>X</b></button>
                                 </div>
                             </div>
