@@ -105,6 +105,7 @@ const UpdateRoutePage = () => {
                     </div>
                 </div>
             </form>
+            <Footer />
         </div>
     )
 }

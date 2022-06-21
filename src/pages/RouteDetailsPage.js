@@ -27,6 +27,8 @@ const RouteDetailsPage = () => {
                 <h2>{route.city} - {route.country}</h2>
                 <p>{route.description}</p>
             </div>
+            <RegisterArea />
+            <Footer />
             
         </div>
     )
