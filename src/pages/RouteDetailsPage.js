@@ -9,7 +9,7 @@ const RouteDetailsPage = () => {
     const { routeId } = useParams()
 
     useEffect(() => {
-        axios.get(`https://ironrest.herokuapp.com/abobrinha123/${routeId}`)
+        axios.get(`https://ironrest.herokuapp.com/IronTourDB/${routeId}`)
             .then(response => setRoute(response.data))
             .catch(error => console.log(error))
     },
