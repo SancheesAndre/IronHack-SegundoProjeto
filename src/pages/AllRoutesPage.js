@@ -10,7 +10,7 @@ const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
 
     useEffect(() => {
-        axios.get('https://ironrest.herokuapp.com/abobrinha123')
+        axios.get('https://ironrest.herokuapp.com/IronTourDB')
             .then(response => {
                 setRoutes(response.data)
                 
