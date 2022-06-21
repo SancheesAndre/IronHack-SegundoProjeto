@@ -9,7 +9,6 @@ import { useParams } from 'react-router-dom'
 
 const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
-    const { routeId } = useParams()
 
     useEffect(() => {
         axios.get('https://ironrest.herokuapp.com/IronTourDB')
@@ -21,12 +20,12 @@ const AllRoutesPage = () => {
     },
         [])
 
-    const DeleteCardFunc = (id) => {
-        useEffect(() => {
-            axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${routeId}`)
-        }, []);
+    function deleteCardFunc(id) {
+            axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${id}`)
+            .then(setRoutes(routes.filter(route => route._id !== id)))
+        
     }
-    
+
     return (
         <div>
             <Navbar />
@@ -34,19 +33,19 @@ const AllRoutesPage = () => {
                 routes.map(route => {
                     return (
                         <div className='container'>
-                            <Link to={route._id} key={route._id} className='RouteCard'>
-                                <div className='imgDiv'>
+                            <div key={route._id} className='RouteCard'>
+                                <Link to={route._id} className='imgDiv'>
                                     <img className="imageBox" src={route.imgUrl} alt="Route" />
-                                </div>
-                                <div className="routeInfo">
+                                </Link>
+                                <Link to={route._id} className="routeInfo">
                                     <h1>{route.title}</h1>
                                     <h2>{route.city} - {route.country}</h2>
-                                </div>
+                                </Link>
                                 <div className="OptionsBtn">
                                     <Link to={'/update-route'} className='UpdateLink'>✏️</Link>
-                                    <button className='CardBtns' onClick={() => DeleteCardFunc(route._id)}>X</button>
+                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><b>X</b></button>
                                 </div>
-                            </Link>
+                            </div>
 
                         </div>
                     )
