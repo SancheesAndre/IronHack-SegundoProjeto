@@ -31,9 +31,15 @@
 }
 
 
-a {
+.container a {
     color: #333
 }
+
+a {
+    color: white;
+ }
+
+
 
 .container {
     display: flex;

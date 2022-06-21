@@ -5,9 +5,10 @@ import './Navbar.css'
 function Navbar() {
     return(
         <nav>
-            <div className='logo'>
+            
+            <Link to={'/'} className='logo'>
                 IronTour Advisor
-            </div>
+            </Link>
 
             <div className='menu'>
             

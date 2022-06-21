@@ -25,6 +25,8 @@ nav div {
     align-items: center;
 }
 
+
+
 .menu {
     width: 100%;
     display: flex;
@@ -55,5 +57,9 @@ li {
 }
 
 .btn-cadastrar a {
+    color: white;
+}
+
+.logo a {
     color: white;
 }
