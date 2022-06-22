@@ -5,6 +5,8 @@ import RegisterArea from "../components/RegisterArea/RegisterArea"
 import Footer from "../components/Footer/Footer"
 import { Link } from 'react-router-dom'
 import './AllRoutesPage.css'
+import { ImPencil } from "react-icons/im";
+import { BsFillTrashFill } from "react-icons/bs";
 
 const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
@@ -42,8 +44,8 @@ const AllRoutesPage = () => {
                                     <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">
-                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'>✏️</Link>
-                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}>🗑️</button>
+                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'><ImPencil size={25}/></Link>
+                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><BsFillTrashFill size={25}/></button>
                                 </div>
                             </div>
 

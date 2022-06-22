@@ -1,12 +1,23 @@
 .footer {
-    background-color: black;
+    background-color: #222;
     color: white;
     height: 15vh;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .Github {
+    
+    display: flex;
     padding: 10px;
+    
 }
+
+.Github a {
+    margin: 0 5px;
+}
+
+.react-icons {
+    font-size: 10em;
+  }

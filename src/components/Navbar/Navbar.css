@@ -1,15 +1,17 @@
 a {
     text-decoration: none;
+    
 }
 
 nav {
-    background-color: #111;
+    background-color: #222;
     height: 8vh;
     width: 98%;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    
 }
 
 nav div {
@@ -50,7 +52,7 @@ li {
 }
 
 .btn-cadastrar {
-    background-color: #111;
+    background-color: #222;
     color: white;
     border: 2px solid white;
     border-radius: 10px;    

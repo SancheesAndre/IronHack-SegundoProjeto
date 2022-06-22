@@ -25,13 +25,15 @@ const RouteDetailsPage = () => {
                 <img className='CardImage' src={route.imgUrl} alt="" />
             </div>
             <div className="InfoCardBox">
-                <h1>{route.title}</h1>
-                <h2>{route.city} - {route.country}</h2>
-                <p>{route.description}</p>
+                <div className="content">
+                    <h1>{route.title}</h1>
+                    <h2>{route.city} - {route.country}</h2>
+                    <p>{route.description}</p>
+                </div>
             </div>
             <RegisterArea />
             <Footer />
-            
+
         </div>
     )
 }
