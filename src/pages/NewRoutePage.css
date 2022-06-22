@@ -1,0 +1,29 @@
+.NewRouteCard {
+    color: rgb(240, 240, 240);
+    padding: 15px;
+    background-color: #111;
+    box-shadow: 10px 10px 20px rgb(113, 113, 113);
+    margin: 20px auto;
+    width: 400px;
+    justify-content: center;
+    border-radius: 4px;
+    border: 25px solid rgb(240, 240, 240);
+    border-bottom: 75px solid rgb(240, 240, 240);
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.Label {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+       
+}
+
+.Label select {
+    width: 180px;
+}
+
+.SubmitButton {
+    padding: 5px;
+    font-family: 'Permanent Marker', sans-serif;
+}

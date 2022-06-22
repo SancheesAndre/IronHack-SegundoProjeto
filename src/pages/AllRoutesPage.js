@@ -22,9 +22,9 @@ const AllRoutesPage = () => {
         [])
 
     function deleteCardFunc(id) {
-            axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${id}`)
+        axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${id}`)
             .then(setRoutes(routes.filter(route => route._id !== id)))
-            .catch(err => console.log(err))        
+            .catch(err => console.log(err))
     }
 
     return (
@@ -34,7 +34,7 @@ const AllRoutesPage = () => {
                 routes.map(route => {
                     return (
                         <div key={route._id} className='container'>
-                            <div  className='RouteCard'>
+                            <div className='RouteCard'>
                                 <Link to={route._id} className='imgDiv'>
                                     <img className="imageBox" src={route.imgUrl} alt="Route" />
                                 </Link>
@@ -44,8 +44,8 @@ const AllRoutesPage = () => {
                                     <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">
-                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'><ImPencil size={25}/></Link>
-                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><BsFillTrashFill size={25}/></button>
+                                    <Link to={`/update-route/${route._id}`} className='UpdateLink'><ImPencil size={25} /></Link>
+                                    <button className='CardBtns' onClick={() => deleteCardFunc(route._id)}><BsFillTrashFill size={25} /></button>
                                 </div>
                             </div>
 

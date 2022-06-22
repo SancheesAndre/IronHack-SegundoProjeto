@@ -22,12 +22,13 @@ const RouteDetailsPage = () => {
         <div>
             <Navbar />
             <div className="ImageCardBox">
-                <img className='CardImage' src={route.imgUrl} alt="" />
+                <img className='CardImage' src={route.imgUrl} alt="route" />
             </div>
             <div className="InfoCardBox">
                 <div className="content">
                     <h1>{route.title}</h1>
                     <h2>{route.city} - {route.country}</h2>
+                    <h3>{route.category}</h3>
                     <p>{route.description}</p>
                 </div>
             </div>
