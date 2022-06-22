@@ -85,7 +85,7 @@ const NewRoutePage = () => {
                     </div>
                     <div className='Label'>
                         <label>Descrição do Destino</label>
-                        <input
+                        <textarea
                             type="text"
                             name='description'
                             value={state.description}

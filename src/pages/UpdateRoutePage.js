@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar"
 import Footer from "../components/Footer/Footer"
 
 
+
 const UpdateRoutePage = () => {
     const navigate = useNavigate()
     const [state, setState] = useState({
@@ -45,7 +46,7 @@ const UpdateRoutePage = () => {
             <Navbar />
             <form onSubmit={handleSubmit}>
                 <div className="NewRouteCard">
-                    <div>
+                    <div className='Label'>
                         <label>Url da Imagem: </label>
                         <input
                             type="text"
@@ -54,7 +55,7 @@ const UpdateRoutePage = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div>
+                    <div className='Label'>
                         <label>Titulo do Destino: </label>
                         <input
                             type="text"
@@ -63,16 +64,20 @@ const UpdateRoutePage = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div>
-                        <label>Categoria do Destino</label>
-                        <input
-                            type="text"
-                            name='category'
-                            value={state.category}
+                    <div className='Label'>
+                        <label >Categoria do Destino</label>
+                        <select
+                            name="category"
+                            id="category"
                             onChange={handleChange}
-                        />
+                        >
+                            <option value=""></option>
+                            <option value="Natureza">Natureza</option>
+                            <option value="Urbano">Urbano</option>
+                            <option value="Cultural">Cultural</option>
+                        </select>
                     </div>
-                    <div>
+                    <div className='Label'>
                         <label>Cidade do Destino </label>
                         <input
                             type="text"
@@ -81,7 +86,7 @@ const UpdateRoutePage = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div>
+                    <div className='Label'>
                         <label>País do Destino</label>
                         <input
                             type="text"
@@ -90,9 +95,9 @@ const UpdateRoutePage = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div>
+                    <div className='Label'>
                         <label>Descrição do Destino</label>
-                        <input
+                        <textarea
                             type="text"
                             name='description'
                             value={state.description}
@@ -100,8 +105,8 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='SubmitButton'>
-                        <button type='submit'>
-                            Atualizar
+                        <button className='SubmitButton's type='submit'>
+                            Utualizar
                         </button>
                     </div>
                 </div>
