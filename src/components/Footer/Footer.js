@@ -4,8 +4,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
 
-
-
     return (
         <div className='footer'>
             <div className='Github'>
