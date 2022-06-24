@@ -48,7 +48,8 @@ ul a {
 
 li {
     display: flex;
-    padding: 10px;    
+    padding: 10px;
+    font-weight: 500;
 }
 
 .btn-cadastrar {
@@ -58,8 +59,16 @@ li {
     border-radius: 10px;    
 }
 
-.btn-cadastrar a {
+.btn-cadastrar {
     color: white;
+    font-weight: 600;
+    padding: 0px 15px;
+    width: 150px;
+    height: 100%;
+}
+
+.btn-cadastrar:hover {
+    cursor: pointer;
 }
 
 .logo a {

@@ -5,7 +5,7 @@ function RegisterArea() {
     return (
         <div className='RegisterArea'>
             <h2>Cadastre seu destino</h2>
-            <p>Conhece algum ponto turístico? Compartilhe conosco!</p>
+            <p>Conhece algum ponto turístico? Compartilhe com a gente!</p>
             <button className='btn-destinos'><Link to={'/new-route'}>Cadastrar</Link></button>
         </div>
     )

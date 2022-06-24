@@ -21,7 +21,7 @@ function Navbar() {
                     </li>
                 </ul>  
 
-                <button className='btn-cadastrar'><Link to={'/new-route'}>Cadastre seu destino</Link></button>
+                <Link to={'/new-route'}><button className='btn-cadastrar'>Cadastre seu destino</button></Link>
 
             </div>
             

@@ -44,7 +44,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Titulo do Destino: </label>
+                        <label>Titulo: </label>
                         <input
                             type="text"
                             name='title'
@@ -53,7 +53,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label >Categoria do Destino</label>
+                        <label >Categoria </label>
                         <select
                             name="category"
                             id="category"
@@ -66,7 +66,7 @@ const NewRoutePage = () => {
                         </select>
                     </div>
                     <div className='Label'>
-                        <label>Cidade do Destino </label>
+                        <label>Cidade</label>
                         <input
                             type="text"
                             name='city'
@@ -75,7 +75,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>País do Destino</label>
+                        <label>País</label>
                         <input
                             type="text"
                             name='country'
@@ -84,7 +84,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Descrição do Destino</label>
+                        <label>Descrição</label>
                         <textarea
                             type="text"
                             name='description'
