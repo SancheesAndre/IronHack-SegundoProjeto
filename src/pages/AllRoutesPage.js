@@ -35,12 +35,16 @@ const AllRoutesPage = () => {
                     return (
                         <div key={route._id} className='container'>
                             <div className='RouteCard'>
+                                
                                 <Link to={route._id} className='imgDiv'>
+                                    
                                     <img className="imageBox" src={route.imgUrl} alt="Route" />
+                                    
                                 </Link>
                                 <Link to={route._id} className="routeInfo">
                                     <h1>{route.title}</h1>
                                     <h2>{route.city} - {route.country}</h2>
+                                    
                                     <p className='VerMais'>ver mais...</p>
                                 </Link>
                                 <div className="OptionsBtn">

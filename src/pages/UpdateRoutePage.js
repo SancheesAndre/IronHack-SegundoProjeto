@@ -67,6 +67,7 @@ const UpdateRoutePage = () => {
                     <div className='Label'>
                         <label >Categoria do Destino</label>
                         <select
+                            value={state.category}
                             name="category"
                             id="category"
                             onChange={handleChange}
@@ -105,7 +106,7 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='SubmitButton'>
-                        <button className='SubmitButton's type='submit'>
+                        <button className='SubmitButton' s type='submit'>
                             Utualizar
                         </button>
                     </div>

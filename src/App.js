@@ -15,9 +15,7 @@ function App() {
         <Route path='/routes/:routeId' element={<RouteDetailsPage />} />
         <Route path='/new-route' element={<NewRoutePage />} />
         <Route path='/update-route/:routeId' element={<UpdateRoutePage />} />
-        {/* <Route path='/*' element={<ErrorPage />} /> */}
       </Routes>
-
     </div>
   );
 }

@@ -11,15 +11,18 @@
 
 .imgDiv {
     padding-right: 20px;
+    width: 40%;
 }
 
 .imageBox {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    
 } 
 
 .routeInfo {
+    width: 60%;
     font-family: 'Permanent Marker', sans-serif;
     padding-left: 20px;
     display: flex;
