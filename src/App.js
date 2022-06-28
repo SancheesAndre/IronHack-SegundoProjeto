@@ -1,10 +1,11 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage'
-import AllRoutesPage from './pages/AllRoutesPage'
-import RouteDetailsPage from './pages/RouteDetailsPage'
-import NewRoutePage from './pages/NewRoutePage'
-import UpdateRoutePage from './pages/UpdateRoutePage'
+import HomePage from './pages/HomePage';
+import AllRoutesPage from './pages/AllRoutesPage';
+import RouteDetailsPage from './pages/RouteDetailsPage';
+import NewRoutePage from './pages/NewRoutePage';
+import UpdateRoutePage from './pages/UpdateRoutePage';
+
 
 function App() {
   return (

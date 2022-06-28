@@ -45,7 +45,7 @@ const AllRoutesPage = () => {
                                     <h1>{route.title}</h1>
                                     <h2>{route.city} - {route.country}</h2>
                                     
-                                    <p className='VerMais'>ver mais...</p>
+                                    <p className='Detalhes'>Detalhes</p>
                                 </Link>
                                 <div className="OptionsBtn">
                                     <Link to={`/update-route/${route._id}`} className='UpdateLink'><ImPencil size={25} /></Link>

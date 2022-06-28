@@ -8,7 +8,9 @@ function MainContent() {
         <div className='main'>
 
             <div className='leftCard'>
-                <img className='imgMainContent' src={natureza} alt='natureza'/>
+                <div className='divImg'>
+                    <img className='imgMainContent' src={natureza} alt='natureza'/>
+                </div>
                 <div className='mainText'>
                     <h2>
                         Natureza
@@ -24,12 +26,16 @@ function MainContent() {
                     </h2>
                     <p>Vivencie momentos inesquecíveis em locais que ficaram marcados na história.</p>
                 </div>
-                <img className='imgMainContent' src={cultural} alt='cultural'/>
+                <div className='divImg'>
+                    <img className='imgMainContent' src={cultural} alt='cultural'/>
+                </div>
             </div>
 
 
             <div className='leftCard'>
-                <img className='imgMainContent' src={urbano} alt='urbano'/>
+                <div className='divImg'>
+                    <img className='imgMainContent' src={urbano} alt='urbano'/>                    
+                </div>
                 <div className='mainText'>
                     <h2>
                         Urbano

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import './RouteDetailsPage.css'
 import Navbar from "../components/Navbar/Navbar"
 import RegisterArea from "../components/RegisterArea/RegisterArea"
 import Footer from "../components/Footer/Footer"
+import { ImPencil } from "react-icons/im";
 
 const RouteDetailsPage = () => {
     const [route, setRoute] = useState([])
@@ -21,6 +22,9 @@ const RouteDetailsPage = () => {
     return (
         <div>
             <Navbar />
+            <div className='updateDiv'>
+                <Link to={`/update-route/${routeId}`} className='UpdateLink'><ImPencil size={25} /></Link>
+            </div>
             <div className="ImageCardBox">
                 <img className='CardImage' src={route.imgUrl} alt="route" />
             </div>

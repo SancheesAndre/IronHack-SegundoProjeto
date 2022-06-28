@@ -73,7 +73,8 @@ a {
     border-radius: 2px;
 }
 
-.VerMais {
+.Detalhes {
+    padding: 3px 6px;
     border: 1px solid black;
     border-radius: 4px;
     width: 80px;
