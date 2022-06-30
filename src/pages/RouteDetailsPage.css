@@ -9,7 +9,7 @@
 
 .InfoCardBox {
     font-family: 'Permanent Marker', sans-serif;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: rgb(242, 242, 242);
     box-shadow: 10px 10px 20px rgb(113, 113, 113);
     margin: 50px auto;
@@ -27,17 +27,21 @@
 }
 
 .content {
-    background-color: rgb(230, 229, 229);    
+    background-color: rgb(230, 229, 229);
+    margin: 0px;
+    padding-bottom: 2px;
+}
+
+.content h1, .content h2, .content h3 {
+    margin: 5px 0;
 }
 
 .updateDiv {
     display: flex;
     justify-content: end;
+    padding-top: 10px;
 }
 
 .UpdateLink {
     color:black;
-    margin: 10px;
-    width: 38px;
-    height: 38px;
 }

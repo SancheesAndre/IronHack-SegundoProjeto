@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import './Hero.css';
 import noronha from '../../images/noronha.jpeg';
 import cristo from '../../images/cristo.jpeg';

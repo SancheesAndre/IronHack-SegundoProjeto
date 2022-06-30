@@ -1,6 +1,6 @@
 import './MainContent.css'
 import natureza from '../../images/natureza.jpg'
-import cultural from '../../images/cultural.jpeg'
+import cultural from '../../images/mercadao.JPG'
 import urbano from '../../images/urbano.jpeg'
 
 function MainContent() {
@@ -24,7 +24,7 @@ function MainContent() {
                     <h2>
                         Cultural
                     </h2>
-                    <p>Vivencie momentos inesquecíveis em locais que ficaram marcados na história.</p>
+                    <p> Se inspire para vivenciar momentos inesquecíveis em locais que estão marcados na história.</p>
                 </div>
                 <div className='divImg'>
                     <img className='imgMainContent' src={cultural} alt='cultural'/>
@@ -40,7 +40,7 @@ function MainContent() {
                     <h2>
                         Urbano
                     </h2>
-                    <p>Conheça os principais destinos para turismo urbano.</p>
+                    <p>Conheça os principais destinos sugeridos para turismo urbano.</p>
                 </div>
             </div>
 

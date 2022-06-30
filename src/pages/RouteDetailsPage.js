@@ -22,14 +22,14 @@ const RouteDetailsPage = () => {
     return (
         <div>
             <Navbar />
-            <div className='updateDiv'>
-                <Link to={`/update-route/${routeId}`} className='UpdateLink'><ImPencil size={25} /></Link>
-            </div>
             <div className="ImageCardBox">
                 <img className='CardImage' src={route.imgUrl} alt="route" />
             </div>
             <div className="InfoCardBox">
                 <div className="content">
+                    <div className='updateDiv'>
+                        <Link to={`/update-route/${routeId}`} className='UpdateLink'><ImPencil size={25} /></Link>
+                    </div>
                     <h1>{route.title}</h1>
                     <h2>{route.city} - {route.country}</h2>
                     <h3>{route.category}</h3>
