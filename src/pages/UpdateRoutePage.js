@@ -35,7 +35,7 @@ const UpdateRoutePage = () => {
     function handleSubmit(e) {
         e.preventDefault()
         axios.put(`https://ironrest.herokuapp.com/IronTourDB/${routeId}`, state)
-            .then(() => navigate('/routes'))
+            .then(() => navigate(`/routes/${routeId}`))
             .catch(error => console.log(error))
     }
 
@@ -56,7 +56,7 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Titulo do Destino: </label>
+                        <label>Titulo: </label>
                         <input
                             type="text"
                             name='title'
@@ -65,7 +65,7 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label >Categoria do Destino</label>
+                        <label >Categoria:</label>
                         <select
                             value={state.category}
                             name="category"
@@ -79,7 +79,7 @@ const UpdateRoutePage = () => {
                         </select>
                     </div>
                     <div className='Label'>
-                        <label>Cidade do Destino </label>
+                        <label>Cidade:</label>
                         <input
                             type="text"
                             name='city'
@@ -88,7 +88,7 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>País do Destino</label>
+                        <label>País:</label>
                         <input
                             type="text"
                             name='country'
@@ -97,7 +97,7 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Descrição do Destino</label>
+                        <label>Descrição:</label>
                         <textarea
                             type="text"
                             name='description'
@@ -106,8 +106,8 @@ const UpdateRoutePage = () => {
                         />
                     </div>
                     <div className='SubmitButton'>
-                        <button className='SubmitButton' s type='submit'>
-                            Utualizar
+                        <button className='SubmitButton' type='submit'>
+                            Atualizar
                         </button>
                     </div>
                 </div>

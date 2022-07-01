@@ -8,6 +8,7 @@
 }
 
 .hero-text {
+    padding-top: 40px;
     font-size: 1.5vh;
     margin: 0;
     text-align: center;
@@ -16,10 +17,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-shadow: 2px 2px black;
 }
 
 .placeName {
     margin: 0;
-    font-size: 20vh;
+    font-size: 15vh;
     font-weight: 600;
+    text-shadow: 2px 5px black;
 }

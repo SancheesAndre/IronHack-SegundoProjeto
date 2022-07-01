@@ -35,7 +35,7 @@ const NewRoutePage = () => {
             <form onSubmit={handleSubmit}>
                 <div className="NewRouteCard">
                     <div className='Label'>
-                        <label>Url da Imagem: </label>
+                        <label>Url da Imagem:</label>
                         <input
                             type="text"
                             name='imgUrl'
@@ -44,7 +44,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Titulo: </label>
+                        <label>Titulo:</label>
                         <input
                             type="text"
                             name='title'
@@ -53,7 +53,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label >Categoria </label>
+                        <label >Categoria:</label>
                         <select
                             name="category"
                             id="category"
@@ -66,7 +66,7 @@ const NewRoutePage = () => {
                         </select>
                     </div>
                     <div className='Label'>
-                        <label>Cidade</label>
+                        <label>Cidade:</label>
                         <input
                             type="text"
                             name='city'
@@ -75,7 +75,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>País</label>
+                        <label>País:</label>
                         <input
                             type="text"
                             name='country'
@@ -84,7 +84,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Descrição</label>
+                        <label>Descrição:</label>
                         <textarea
                             type="text"
                             name='description'

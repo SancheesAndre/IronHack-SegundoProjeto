@@ -5,7 +5,6 @@ import MainContent from "../components/MainContent/MainContent"
 import RegisterArea from "../components/RegisterArea/RegisterArea"
 import Footer from "../components/Footer/Footer"
 
-
 const HomePage = () => {
     return (
         <div>
