@@ -6,14 +6,20 @@ import Navbar from "../components/Navbar/Navbar"
 import RegisterArea from "../components/RegisterArea/RegisterArea"
 import Footer from "../components/Footer/Footer"
 import { ImPencil } from "react-icons/im";
+import Loading from '../components/Loading/Loading'
+
 
 const RouteDetailsPage = () => {
     const [route, setRoute] = useState([])
     const { routeId } = useParams()
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     useEffect(() => {
         axios.get(`https://ironrest.herokuapp.com/IronTourDB/${routeId}`)
-            .then(response => setRoute(response.data))
+            .then(response => {
+                setRoute(response.data)
+                setRemoveLoading(true)
+            })
             .catch(error => console.log(error))
     },
         [routeId])
@@ -22,6 +28,7 @@ const RouteDetailsPage = () => {
     return (
         <div>
             <Navbar />
+            { !removeLoading && <Loading />}
             <div className="ImageCardBox">
                 <img className='CardImage' src={route.imgUrl} alt="route" />
             </div>

@@ -7,20 +7,20 @@ import { Link } from 'react-router-dom'
 import './AllRoutesPage.css'
 import { ImPencil } from "react-icons/im";
 import { BsFillTrashFill } from "react-icons/bs";
+import Loading from '../components/Loading/Loading'
 
 const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
-    const [fetching, setFetching] = useState(true)
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     useEffect(() => {
         axios.get('https://ironrest.herokuapp.com/IronTourDB')
             .then(response => {
                 setRoutes(response.data)
-                setFetching(false)
+                setRemoveLoading(true)
             })
             .catch(error => console.log(error))
-    },
-        [])
+    }, [])
 
     function deleteCardFunc(id) {
         axios.delete(`https://ironrest.herokuapp.com/IronTourDB/${id}`)
@@ -31,7 +31,7 @@ const AllRoutesPage = () => {
     return (
         <div>
             <Navbar />
-            { fetching && <p>Carregando...</p>}
+            { !removeLoading && <Loading />}
             {
                 routes.map(route => {
                     return (

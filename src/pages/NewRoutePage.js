@@ -44,7 +44,7 @@ const NewRoutePage = () => {
                         />
                     </div>
                     <div className='Label'>
-                        <label>Titulo:</label>
+                        <label>Título:</label>
                         <input
                             type="text"
                             name='title'

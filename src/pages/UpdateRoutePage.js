@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Navbar from "../components/Navbar/Navbar"
 import Footer from "../components/Footer/Footer"
-
+import Loading from '../components/Loading/Loading'
 
 
 const UpdateRoutePage = () => {
@@ -17,12 +17,14 @@ const UpdateRoutePage = () => {
         description: ''
     })
     const { routeId } = useParams()
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     useEffect(() => {
         axios.get(`https://ironrest.herokuapp.com/IronTourDB/${routeId}`)
             .then(response => {
                 delete response.data._id
                 setState({ ...response.data })
+                setRemoveLoading(true)
             })
             .catch(error => console.log(error))
     },
@@ -44,6 +46,7 @@ const UpdateRoutePage = () => {
     return (
         <div>
             <Navbar />
+            { !removeLoading && <Loading />}
             <form onSubmit={handleSubmit}>
                 <div className="NewRouteCard">
                     <div className='Label'>
