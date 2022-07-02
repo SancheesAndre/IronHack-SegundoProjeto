@@ -10,12 +10,13 @@ import { BsFillTrashFill } from "react-icons/bs";
 
 const AllRoutesPage = () => {
     const [routes, setRoutes] = useState([])
+    const [fetching, setFetching] = useState(true)
 
     useEffect(() => {
         axios.get('https://ironrest.herokuapp.com/IronTourDB')
             .then(response => {
                 setRoutes(response.data)
-
+                setFetching(false)
             })
             .catch(error => console.log(error))
     },
@@ -30,6 +31,7 @@ const AllRoutesPage = () => {
     return (
         <div>
             <Navbar />
+            { fetching && <p>Carregando...</p>}
             {
                 routes.map(route => {
                     return (
