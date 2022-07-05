@@ -1,4 +1,5 @@
 # IronTour Advisor - Roteiros para sua viagem! 
+[Visite o Site](https://irontouradvisor.netlify.app/) - [Apresentação em ppt](https://docs.google.com/presentation/d/1nHa1515Ekx118-cCT8ympsCHaUYdNfTjFNCNp5a3CZI/edit?usp=sharing)
 
 ## Sobre o projeto
 
